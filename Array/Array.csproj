@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4495D4BA-FE04-4CEB-8AB0-A4A1EA6B569A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>algs</RootNamespace>
-    <AssemblyName>algs</AssemblyName>
+    <ProjectGuid>{3E6B8455-95E0-45DE-B538-2EFC0DF2287B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Array</RootNamespace>
+    <AssemblyName>Array</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,26 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Array.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Array\Array.csproj">
-      <Project>{3e6b8455-95e0-45de-b538-2efc0df2287b}</Project>
-      <Name>Array</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Search\Search.csproj">
-      <Project>{6f0cbae4-be37-4031-a805-ba705f631a52}</Project>
-      <Name>Search</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Sort\Sort.csproj">
-      <Project>{853765c3-6001-4b39-ba9c-d238ff7238ad}</Project>
-      <Name>Sort</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
